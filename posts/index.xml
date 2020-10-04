@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nick.Ludwi.gg</title>
+    <link>http://nick.ludwi.gg/posts/</link>
+    <description>Recent content in Posts on Nick.Ludwi.gg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Oct 2020 14:25:19 -0700</lastBuildDate>
+    
+	<atom:link href="http://nick.ludwi.gg/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recently Read</title>
+      <link>http://nick.ludwi.gg/posts/books/</link>
+      <pubDate>Sun, 04 Oct 2020 14:25:19 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/books/</guid>
+      <description>Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoyed recently. If it&amp;rsquo;s on here, I&amp;rsquo;d recommend it!
+ Sci-fi, including,  Dune and sequels by F. Herbert, Lilith&amp;rsquo;s Brood by Butler, The Book of the New Sun by Wolfe, The Book of the Long Sun by Wolfe,   History, including,  The Martyrdom of Man by Reade, Dynasty by Holland,   Philosophy, including,  The Gay Science by Neitzsche, A Guide for the Perplexed by Schumacher,   Non-fiction, including  The Wealth of Nations by Smith, Animal Behavior by Alcock, Anarchy and the Law by Stringham.</description>
+    </item>
+    
+    <item>
+      <title>Academic Paper Repository</title>
+      <link>http://nick.ludwi.gg/posts/papers/</link>
+      <pubDate>Sun, 04 Oct 2020 11:01:54 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/papers/</guid>
+      <description>A central place to store links and copies of the publications I&amp;rsquo;ve contributed to.
+ORCID: 000-0002-7345-659X
+Publications:
+ N.B. Ludwig, Correlations and Self-Assembly in Ionic and Nematic Liquids pdf N.B. Ludwig, K. Weirich, E. Alster, T.A. Witten, M.L. Gardel, K. Dasbiswas, S. Vaikuntanathan. Nucleation and shape dynamics of model nematic tactoids around adhesive colloids JCP 149, 084901 (2020). pdf arXiv:1909.03481. V. Kamysbayev*, V. Srivastava*, N.B. Ludwig*, O.J. Borkiewicz, H. Zhang, J.</description>
+    </item>
+    
+  </channel>
+</rss>
