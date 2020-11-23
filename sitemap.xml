@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://nick.ludwi.gg/posts/</loc>
+    <lastmod>2020-11-22T17:50:53-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nick.ludwi.gg/posts/ssc-scrapes/</loc>
+    <lastmod>2020-11-22T17:50:53-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nick.ludwi.gg/contact/</loc>
     <lastmod>2020-10-04T14:53:19-07:00</lastmod>
   </url>
@@ -10,11 +20,6 @@
   <url>
     <loc>http://nick.ludwi.gg/</loc>
     <lastmod>2020-10-04T14:53:19-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nick.ludwi.gg/posts/</loc>
-    <lastmod>2020-10-04T14:25:19-07:00</lastmod>
   </url>
   
   <url>

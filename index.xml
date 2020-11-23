@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Slate Star Codex scrapes and ebooks</title>
+      <link>http://nick.ludwi.gg/posts/ssc-scrapes/</link>
+      <pubDate>Sun, 22 Nov 2020 17:50:53 -0800</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/ssc-scrapes/</guid>
+      <description>I&amp;rsquo;ve been reading Slate Star Codex for a few years now, and recently got a Kindle ereader. So naturally I thought it&amp;rsquo;d be a good idea to scrape SSC and convert the scrape into a set of ebooks.
+You can find the resulting code and scrape (as of 201122) at my Github or below.
+In particular, you will find a set of .docx files as well as some .mobi ereader format files.</description>
+    </item>
+    
+    <item>
       <title>Contact</title>
       <link>http://nick.ludwi.gg/contact/</link>
       <pubDate>Sun, 04 Oct 2020 14:53:19 -0700</pubDate>
