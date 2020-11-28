@@ -6,10 +6,22 @@
     <description>Recent content on Nick.Ludwi.gg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Oct 2020 14:53:19 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2020 12:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://nick.ludwi.gg/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contact</title>
+      <link>http://nick.ludwi.gg/contact/</link>
+      <pubDate>Sat, 28 Nov 2020 12:00:00 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/contact/</guid>
+      <description>Gmail:
+nick.b.ludwig
+PGP fingerprint:
+7AB63DFE6A0012B82DA06CA8668A32906A35E1DB</description>
+    </item>
     
     <item>
       <title>Slate Star Codex scrapes and ebooks</title>
@@ -20,15 +32,6 @@
       <description>I&amp;rsquo;ve been reading Slate Star Codex for a few years now, and recently got a Kindle ereader. So naturally I thought it&amp;rsquo;d be a good idea to scrape SSC and convert the scrape into a set of ebooks.
 You can find the resulting code and scrape (as of 201122) at my Github or below.
 In particular, you will find a set of .docx files as well as some .mobi ereader format files.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://nick.ludwi.gg/contact/</link>
-      <pubDate>Sun, 04 Oct 2020 14:53:19 -0700</pubDate>
-      
-      <guid>http://nick.ludwi.gg/contact/</guid>
-      <description>You can reach me via Gmail at nick.b.ludwig.</description>
     </item>
     
     <item>
