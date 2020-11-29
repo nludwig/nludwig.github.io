@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://nick.ludwi.gg/posts/public-key/</loc>
-    <lastmod>2020-11-28T13:56:39-08:00</lastmod>
+    <loc>http://nick.ludwi.gg/posts/bitcoin-address/</loc>
+    <lastmod>2020-11-29T08:00:00-08:00</lastmod>
   </url>
   
   <url>
     <loc>http://nick.ludwi.gg/posts/</loc>
+    <lastmod>2020-11-29T08:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nick.ludwi.gg/posts/public-key/</loc>
     <lastmod>2020-11-28T13:56:39-08:00</lastmod>
   </url>
   

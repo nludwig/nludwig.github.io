@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>My Bitcoin address</title>
+      <link>http://nick.ludwi.gg/posts/bitcoin-address/</link>
+      <pubDate>Sun, 29 Nov 2020 08:00:00 -0800</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/bitcoin-address/</guid>
+      <description>bc1qhgkx2agvnp3qxey29jz66nuex5xf66725ejdrd
+View address on Blockchair</description>
+    </item>
+    
+    <item>
       <title>My RSA public key</title>
       <link>http://nick.ludwi.gg/posts/public-key/</link>
       <pubDate>Sat, 28 Nov 2020 13:56:39 -0800</pubDate>
@@ -50,7 +60,8 @@ In particular, you will find a set of .docx files as well as some .mobi ereader 
       <pubDate>Sun, 04 Oct 2020 14:25:19 -0700</pubDate>
       
       <guid>http://nick.ludwi.gg/posts/books/</guid>
-      <description>Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoyed recently. If it&amp;rsquo;s on here, I&amp;rsquo;d recommend it!
+      <description>Currently reading Aristotle, according to this reading order.
+Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoyed recently. If it&amp;rsquo;s on here, I&amp;rsquo;d recommend it!
  Sci-fi, including,  Dune and sequels by F. Herbert, Lilith&amp;rsquo;s Brood by Butler, The Book of the New Sun by Wolfe, The Book of the Long Sun by Wolfe,   History, including,  The Martyrdom of Man by Reade, Dynasty by Holland,   Philosophy, including,  The Gay Science by Neitzsche, A Guide for the Perplexed by Schumacher,   Non-fiction, including  The Wealth of Nations by Smith, Animal Behavior by Alcock, Anarchy and the Law by Stringham.</description>
     </item>
     
