@@ -167,18 +167,18 @@ at NextCloud website to install dependencies.</li>
 <a href="https://help.nextcloud.com/t/nextcloud-nightmare-php-code-is-shown-instead-of-web-interface/66661/5">source</a></p>
 </li>
 <li>Set up MariaDB.
-<ol>
+<ul>
 <li>Install:</li>
-</ol>
+</ul>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install mariadb-server
-</code></pre></div><ol>
+</code></pre></div><ul>
 <li>Initialize and launch MariaDB/MySQL server:</li>
-</ol>
+</ul>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_secure_installation
 </code></pre></div><p><a href="https://computingforgeeks.com/how-to-install-mariadb-on-ubuntu-focal-fossa/">source</a></p>
-<ol>
+<ul>
 <li>Allow standard login to the DB:</li>
-</ol>
+</ul>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql  <span style="color:#007f7f"># Opens MySQL shell.</span>
 &gt; UPDATE mysql.user SET plugin = <span style="color:#0ff;font-weight:bold">&#39;&#39;</span> WHERE plugin = <span style="color:#0ff;font-weight:bold">&#39;unix_socket&#39;</span>;
 &gt; FLUSH PRIVILEGES;
