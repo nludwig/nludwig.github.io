@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Nicholas B Ludwig">
+    <meta name="description" content="Some notes to self (and others) about how I set up NextCloud.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to set up NextCloud"/>
+<meta name="twitter:description" content="Some notes to self (and others) about how I set up NextCloud."/>
+
+    <meta property="og:title" content="How to set up NextCloud" />
+<meta property="og:description" content="Some notes to self (and others) about how I set up NextCloud." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nick.ludwi.gg/posts/setup-nextcloud/" />
+<meta property="article:published_time" content="2021-05-22T17:43:44-07:00" />
+<meta property="article:modified_time" content="2021-05-22T17:43:44-07:00" />
+
+
+    <title>
+  How to set up NextCloud · Nick.Ludwi.gg
+</title>
+
+    
+      <link rel="canonical" href="http://nick.ludwi.gg/posts/setup-nextcloud/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d5fc29223aaba775b2382f7ffd16a93373f62edf0a56eab5c193080afd6164e3.css" integrity="sha256-1fwpIjqrp3WyOC9//RapM3P2Lt8KVuq1wZMICv1hZOM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.f0aacc007c6087b57f11c89634f0988aeb8381347dc2c681e733f8079dae7c6d.css" integrity="sha256-8KrMAHxgh7V/EciWNPCYiuuDgTR9wsaB5zP4B52ufG0=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+      <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=" twemoji.parse(document.body); "
+  >
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Nick.Ludwi.gg
+    </a>
+    
+      
+        <span id="dark-mode-toggle" class="float-right">
+          <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </span>
+      
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+        
+          <li class="navigation-item separator">
+            <span>|</span>
+          </li>
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">How to set up NextCloud</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-05-22T17:43:44-07:00'>
+                May 22, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>I&rsquo;ve recently become interested in hosting more of my own data.
+Maybe I&rsquo;ll post more about it sometime.
+Briefly, I&rsquo;m using
+<a href="https://tailscale.com/">Tailscale</a>
+to connect my devices, and running an
+<a href="https://urbit.org/">Urbit</a>
+ship.
+I wanted to host my own files as well, and ran across
+<a href="https://nextcloud.com/">Nextcloud</a>
+and set it up as well.</p>
+<p>Below are a compilation of instructions to make it easy on myself when I inevitably need to set everything up again.</p>
+<ol>
+<li>Follow
+<a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html">instructions</a>
+at NextCloud website to install dependencies.</li>
+<li>I needed to additionally install
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install libapache2-mod-php7
+</code></pre></div><p>to get the GUI working.
+<a href="https://help.nextcloud.com/t/nextcloud-nightmare-php-code-is-shown-instead-of-web-interface/66661/5">source</a></p>
+</li>
+<li>Set up MariaDB.
+<ol>
+<li>Install:</li>
+</ol>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install mariadb-server
+</code></pre></div><ol>
+<li>Initialize and launch MariaDB/MySQL server:</li>
+</ol>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql_secure_installation
+</code></pre></div><p><a href="https://computingforgeeks.com/how-to-install-mariadb-on-ubuntu-focal-fossa/">source</a></p>
+<ol>
+<li>Allow standard login to the DB:</li>
+</ol>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mysql  <span style="color:#007f7f"># Opens MySQL shell.</span>
+&gt; UPDATE mysql.user SET plugin = <span style="color:#0ff;font-weight:bold">&#39;&#39;</span> WHERE plugin = <span style="color:#0ff;font-weight:bold">&#39;unix_socket&#39;</span>;
+&gt; FLUSH PRIVILEGES;
+</code></pre></div><p><a href="https://stackoverflow.com/a/43424234">source</a></p>
+</li>
+<li>Follow
+<a href="https://docs.nextcloud.com/server/latest/admin_manual/installation/installation_wizard.html">instructions</a>
+at NextCloud website to install via the GUI.</li>
+</ol>
+<p>A series of commands that may work are as follows (on Ubuntu 20.04):</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">INSTALL_PATH=/var/www
+CURRENT_VERSION=nextcloud-21.0.2.zip
+
+wget https://download.nextcloud.com/server/releases/<span style="color:#0ff;font-weight:bold">${</span>CURRENT_VERSION<span style="color:#0ff;font-weight:bold">}</span>
+<span style="color:#007f7f"># Or check https://nextcloud.com/install/#instructions-server for newest versions</span>
+unzip $CURRENT_VERSION
+sudo cp -r nextcloud <span style="color:#0ff;font-weight:bold">${</span>INSTALL_PATH<span style="color:#0ff;font-weight:bold">}</span>
+
+sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt dist-upgrade &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt install mariadb-server apache2 php7.4 libapache2-mod-php7 ffmpeg
+<span style="color:#fff;font-weight:bold">for</span> phpmod in ctype curl dom gd iconv json mbstring posix session xml zip zlib mysql fileinfo bz2 intl ldap smbclient ftp imap bcmap gmp exif imagick; <span style="color:#fff;font-weight:bold">do</span> sudo apt install php7.4-<span style="color:#0ff;font-weight:bold">${</span>phpmod<span style="color:#0ff;font-weight:bold">}</span>; <span style="color:#fff;font-weight:bold">done</span>
+
+sudo mysql_secure_installation
+sudo mysql  <span style="color:#007f7f"># Opens MySQL shell.</span>
+&gt; UPDATE mysql.user SET plugin = <span style="color:#0ff;font-weight:bold">&#39;&#39;</span> WHERE plugin = <span style="color:#0ff;font-weight:bold">&#39;unix_socket&#39;</span>;
+&gt; FLUSH PRIVILEGES;
+
+sudo cat &gt;&gt; /etc/httpd/conf.d/nextcloud.conf <span style="color:#0ff;font-weight:bold">&lt;&lt; EOF
+</span><span style="color:#0ff;font-weight:bold">Alias /nextcloud &#34;/var/www/nextcloud/&#34;
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">&lt;Directory /var/www/nextcloud/&gt;
+</span><span style="color:#0ff;font-weight:bold">  Require all granted
+</span><span style="color:#0ff;font-weight:bold">  AllowOverride All
+</span><span style="color:#0ff;font-weight:bold">  Options FollowSymLinks MultiViews
+</span><span style="color:#0ff;font-weight:bold">  Satist Any
+</span><span style="color:#0ff;font-weight:bold">
+</span><span style="color:#0ff;font-weight:bold">  &lt;IfModule mod_dav.c&gt;
+</span><span style="color:#0ff;font-weight:bold">    Dav off
+</span><span style="color:#0ff;font-weight:bold">  &lt;/IfModule&gt;
+</span><span style="color:#0ff;font-weight:bold">&lt;/Directory&gt;
+</span><span style="color:#0ff;font-weight:bold">EOF</span>
+
+sudo a2ensite nextcloud.conf
+sudo a2enmod rewrite
+sudo a2enmod headers
+sudo a2enmod env
+sudo a2enmod dir
+sudo a2enmod mime
+sudo a2enmod ssl
+sudo a2ensite default-ssl
+sudo service apache2 restart
+
+sudo chown -R www-data:www-data <span style="color:#0ff;font-weight:bold">${</span>INSTALL_PATH<span style="color:#0ff;font-weight:bold">}</span>/nextcloud
+</code></pre></div>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2020 -
+        
+        2021
+         Nicholas B Ludwig 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      
+      <script src="/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

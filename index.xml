@@ -6,10 +6,42 @@
     <description>Recent content on Nick.Ludwi.gg</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2020 12:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 22 May 2021 17:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://nick.ludwi.gg/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to set up NextCloud</title>
+      <link>http://nick.ludwi.gg/posts/setup-nextcloud/</link>
+      <pubDate>Sat, 22 May 2021 17:43:44 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/setup-nextcloud/</guid>
+      <description>I&amp;rsquo;ve recently become interested in hosting more of my own data. Maybe I&amp;rsquo;ll post more about it sometime. Briefly, I&amp;rsquo;m using Tailscale to connect my devices, and running an Urbit ship. I wanted to host my own files as well, and ran across Nextcloud and set it up as well.
+Below are a compilation of instructions to make it easy on myself when I inevitably need to set everything up again.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://nick.ludwi.gg/about/</link>
+      <pubDate>Sat, 22 May 2021 17:00:00 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/about/</guid>
+      <description>Hi!
+I&amp;rsquo;m Nick. These days, I&amp;rsquo;m employed by Mod9 dba Remeeting, where I write code and think about ASR. In the past, I studied complex liquid systems using computer simulation techniques like molecular dynamics and Monte Carlo (my favorite) in Suri Vaiktuntanathan&amp;rsquo;s research group. And before that, I studied chemistry! You can find some of my past work on my Github or here on my webpage.
+When I&amp;rsquo;m not working, I like to read, write, and hike.</description>
+    </item>
+    
+    <item>
+      <title>Recently Read</title>
+      <link>http://nick.ludwi.gg/posts/books/</link>
+      <pubDate>Sat, 22 May 2021 17:00:00 -0700</pubDate>
+      
+      <guid>http://nick.ludwi.gg/posts/books/</guid>
+      <description>Currently reading Aristotle, according to this reading order.
+Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoyed recently. If it&amp;rsquo;s on here, I&amp;rsquo;d recommend it!
+ Sci-fi, including,  Dune and sequels by F. Herbert, Lilith&amp;rsquo;s Brood by Butler, The Book of the New Sun by Wolfe, The Book of the Long Sun by Wolfe,   History, including,  The Martyrdom of Man by Reade, Dynasty by Holland,   Philosophy, including,  The Gay Science by Neitzsche, A Guide for the Perplexed by Schumacher, Things Hidden Since the Foundation of the World by Girard.</description>
+    </item>
     
     <item>
       <title>My Bitcoin address</title>
@@ -55,17 +87,6 @@ In particular, you will find a set of .docx files as well as some .mobi ereader 
     </item>
     
     <item>
-      <title>Recently Read</title>
-      <link>http://nick.ludwi.gg/posts/books/</link>
-      <pubDate>Sun, 04 Oct 2020 14:25:19 -0700</pubDate>
-      
-      <guid>http://nick.ludwi.gg/posts/books/</guid>
-      <description>Currently reading Aristotle, according to this reading order.
-Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoyed recently. If it&amp;rsquo;s on here, I&amp;rsquo;d recommend it!
- Sci-fi, including,  Dune and sequels by F. Herbert, Lilith&amp;rsquo;s Brood by Butler, The Book of the New Sun by Wolfe, The Book of the Long Sun by Wolfe,   History, including,  The Martyrdom of Man by Reade, Dynasty by Holland,   Philosophy, including,  The Gay Science by Neitzsche, A Guide for the Perplexed by Schumacher,   Non-fiction, including  The Wealth of Nations by Smith, Animal Behavior by Alcock, Anarchy and the Law by Stringham.</description>
-    </item>
-    
-    <item>
       <title>Academic Paper Repository</title>
       <link>http://nick.ludwi.gg/posts/papers/</link>
       <pubDate>Sun, 04 Oct 2020 11:01:54 -0700</pubDate>
@@ -75,17 +96,6 @@ Here&amp;rsquo;s a non-exhaustive list of some of the books I&amp;rsquo;ve enjoy
 ORCID: 000-0002-7345-659X
 Publications:
  N.B. Ludwig, Correlations and Self-Assembly in Ionic and Nematic Liquids pdf N.B. Ludwig, K. Weirich, E. Alster, T.A. Witten, M.L. Gardel, K. Dasbiswas, S. Vaikuntanathan. Nucleation and shape dynamics of model nematic tactoids around adhesive colloids JCP 149, 084901 (2020). pdf arXiv:1909.03481. V. Kamysbayev*, V. Srivastava*, N.B. Ludwig*, O.J. Borkiewicz, H. Zhang, J.</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>http://nick.ludwi.gg/about/</link>
-      <pubDate>Sun, 04 Oct 2020 10:00:00 -0700</pubDate>
-      
-      <guid>http://nick.ludwi.gg/about/</guid>
-      <description>Hi!
-I&amp;rsquo;m Nick. These days, I&amp;rsquo;m employed by Remeeting, where I write code and think about ASR. In the past, I studied complex liquid systems using computer simulation techniques like molecular dynamics and Monte Carlo (my favorite). And before that, I studied chemistry! You can find some of my past work on my Github or here on my webpage.
-When I&amp;rsquo;m not working, I like to read, write, and hike. My reading interests are pretty broad.</description>
     </item>
     
   </channel>
