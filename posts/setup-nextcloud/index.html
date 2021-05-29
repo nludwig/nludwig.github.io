@@ -155,7 +155,7 @@ to connect my devices, and running an
 ship.
 I wanted to host my own files as well, and ran across
 <a href="https://nextcloud.com/">Nextcloud</a>
-and set it up as well.</p>
+and decided to set it up.</p>
 <p>Below are a compilation of instructions to make it easy on myself when I inevitably need to set everything up again.</p>
 <ol>
 <li>Follow
@@ -190,29 +190,32 @@ at NextCloud website to install via the GUI.</li>
 </ol>
 <p>A series of commands that may work are as follows (on Ubuntu 20.04):</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">INSTALL_PATH=/var/www
+<span style="color:#007f7f"># Check https://nextcloud.com/install/#instructions-server for newest versions.</span>
 CURRENT_VERSION=nextcloud-21.0.2.zip
+APT_MODULES=<span style="color:#0ff;font-weight:bold">&#39;mariadb-server apache2 php7.4 libapache2-mod-php7 ffmpeg&#39;</span>
+<span style="color:#007f7f"># Not certain about all these PHP modules.</span>
+PHP_MODULES=<span style="color:#0ff;font-weight:bold">&#39;ctype curl dom gd iconv json mbstring posix session xml zip zlib mysql fileinfo bz2 intl ldap smbclient ftp imap bcmap gmp exif imagick&#39;</span>
 
 wget https://download.nextcloud.com/server/releases/<span style="color:#0ff;font-weight:bold">${</span>CURRENT_VERSION<span style="color:#0ff;font-weight:bold">}</span>
-<span style="color:#007f7f"># Or check https://nextcloud.com/install/#instructions-server for newest versions</span>
 unzip $CURRENT_VERSION
 sudo cp -r nextcloud <span style="color:#0ff;font-weight:bold">${</span>INSTALL_PATH<span style="color:#0ff;font-weight:bold">}</span>
 
-sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt dist-upgrade &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt install mariadb-server apache2 php7.4 libapache2-mod-php7 ffmpeg
-<span style="color:#fff;font-weight:bold">for</span> phpmod in ctype curl dom gd iconv json mbstring posix session xml zip zlib mysql fileinfo bz2 intl ldap smbclient ftp imap bcmap gmp exif imagick; <span style="color:#fff;font-weight:bold">do</span> sudo apt install php7.4-<span style="color:#0ff;font-weight:bold">${</span>phpmod<span style="color:#0ff;font-weight:bold">}</span>; <span style="color:#fff;font-weight:bold">done</span>
+sudo apt update &amp;&amp; sudo apt upgrade &amp;&amp; sudo apt dist-upgrade &amp;&amp; sudo apt autoremove &amp;&amp; sudo apt install <span style="color:#0ff;font-weight:bold">${</span>APT_MODULES<span style="color:#0ff;font-weight:bold">}</span>
+<span style="color:#fff;font-weight:bold">for</span> phpmod in <span style="color:#0ff;font-weight:bold">${</span>PHP_MODULES<span style="color:#0ff;font-weight:bold">}</span>; <span style="color:#fff;font-weight:bold">do</span> sudo apt install php7.4-<span style="color:#0ff;font-weight:bold">${</span>phpmod<span style="color:#0ff;font-weight:bold">}</span>; <span style="color:#fff;font-weight:bold">done</span>
 
 sudo mysql_secure_installation
 sudo mysql  <span style="color:#007f7f"># Opens MySQL shell.</span>
 &gt; UPDATE mysql.user SET plugin = <span style="color:#0ff;font-weight:bold">&#39;&#39;</span> WHERE plugin = <span style="color:#0ff;font-weight:bold">&#39;unix_socket&#39;</span>;
 &gt; FLUSH PRIVILEGES;
 
-sudo cat &gt;&gt; /etc/httpd/conf.d/nextcloud.conf <span style="color:#0ff;font-weight:bold">&lt;&lt; EOF
+sudo cat &gt;&gt; /etc/apache2/sites-available/nextcloud.conf <span style="color:#0ff;font-weight:bold">&lt;&lt; EOF
 </span><span style="color:#0ff;font-weight:bold">Alias /nextcloud &#34;/var/www/nextcloud/&#34;
 </span><span style="color:#0ff;font-weight:bold">
 </span><span style="color:#0ff;font-weight:bold">&lt;Directory /var/www/nextcloud/&gt;
 </span><span style="color:#0ff;font-weight:bold">  Require all granted
 </span><span style="color:#0ff;font-weight:bold">  AllowOverride All
 </span><span style="color:#0ff;font-weight:bold">  Options FollowSymLinks MultiViews
-</span><span style="color:#0ff;font-weight:bold">  Satist Any
+</span><span style="color:#0ff;font-weight:bold">  Satisfy Any
 </span><span style="color:#0ff;font-weight:bold">
 </span><span style="color:#0ff;font-weight:bold">  &lt;IfModule mod_dav.c&gt;
 </span><span style="color:#0ff;font-weight:bold">    Dav off

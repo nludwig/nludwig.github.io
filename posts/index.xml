@@ -17,7 +17,7 @@
       <pubDate>Sat, 22 May 2021 17:43:44 -0700</pubDate>
       
       <guid>http://nick.ludwi.gg/posts/setup-nextcloud/</guid>
-      <description>I&amp;rsquo;ve recently become interested in hosting more of my own data. Maybe I&amp;rsquo;ll post more about it sometime. Briefly, I&amp;rsquo;m using Tailscale to connect my devices, and running an Urbit ship. I wanted to host my own files as well, and ran across Nextcloud and set it up as well.
+      <description>I&amp;rsquo;ve recently become interested in hosting more of my own data. Maybe I&amp;rsquo;ll post more about it sometime. Briefly, I&amp;rsquo;m using Tailscale to connect my devices, and running an Urbit ship. I wanted to host my own files as well, and ran across Nextcloud and decided to set it up.
 Below are a compilation of instructions to make it easy on myself when I inevitably need to set everything up again.</description>
     </item>
     
